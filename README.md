@@ -31,15 +31,6 @@ py -m http.server 5173
 4. Для `sendMessage` заполните `chatId` (например `79990001122@c.us`) и текст сообщения.
 5. Для `sendFileByUrl` заполните `chatId` и `urlFile` (прямая ссылка на файл). `fileName` берётся из URL автоматически.
 
-## Публикация (GitHub Pages)
-
-1. Запушьте репозиторий на GitHub.
-2. В репозитории откройте **Settings → Pages**
-3. **Build and deployment → Deploy from a branch**
-4. Branch: `main`, Folder: `/ (root)`
-
-После этого GitHub даст ссылку на опубликованную страницу.
-
 ## Примечания
 
 - Базовый хост API используется: `https://api.greenapi.com`
