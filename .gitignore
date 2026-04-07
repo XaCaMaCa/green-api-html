@@ -1,3 +1,5 @@
 node_modules/
 .DS_Store
 .vscode/
+/green-api-html.exe
+/green-api-html
