@@ -7,9 +7,6 @@ import (
 	"net/http"
 	"os"
 )
-
-// Статические файлы страницы вшиваются в бинарник (удобно для деплоя одним файлом).
-//go:embed index.html styles.css app.js
 var static embed.FS
 
 func main() {
