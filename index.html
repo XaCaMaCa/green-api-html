@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GREEN-API Demo</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <main class="layout">
+        <section class="panel panel--left" aria-label="Управление запросами">
+          <div class="stack">
+            <label class="field">
+              <span class="field__label sr-only">idInstance</span>
+              <input id="idInstance" class="input" type="text" inputmode="numeric" placeholder="idInstance" autocomplete="off" />
+            </label>
+
+            <label class="field">
+              <span class="field__label sr-only">ApiTokenInstance</span>
+              <input id="apiTokenInstance" class="input" type="password" placeholder="ApiTokenInstance" autocomplete="off" />
+            </label>
+          </div>
+
+          <div class="stack stack--spaced">
+            <button id="btnGetSettings" class="btn" type="button">getSettings</button>
+            <button id="btnGetState" class="btn" type="button">getStateInstance</button>
+          </div>
+
+          <hr class="divider" />
+
+          <div class="stack">
+            <label class="field">
+              <span class="field__label sr-only">chatId для sendMessage</span>
+              <input id="msgChatId" class="input" type="text" placeholder="77771234567@c.us" autocomplete="off" />
+            </label>
+
+            <label class="field">
+              <span class="field__label sr-only">Сообщение</span>
+              <textarea id="msgText" class="textarea" rows="3" placeholder="Hello world!" spellcheck="false"></textarea>
+            </label>
+
+            <button id="btnSendMessage" class="btn" type="button">sendMessage</button>
+          </div>
+
+          <hr class="divider" />
+
+          <div class="stack">
+            <label class="field">
+              <span class="field__label sr-only">chatId для sendFileByUrl</span>
+              <input id="fileChatId" class="input" type="text" placeholder="77771234567@c.us" autocomplete="off" />
+            </label>
+
+            <label class="field">
+              <span class="field__label sr-only">urlFile</span>
+              <input
+                id="fileUrl"
+                class="input"
+                type="url"
+                placeholder="https://my.site.com/img/horse.png"
+                autocomplete="off"
+              />
+            </label>
+
+            <button id="btnSendFileByUrl" class="btn" type="button">sendFileByUrl</button>
+          </div>
+        </section>
+
+        <section class="panel panel--right" aria-label="Ответ API">
+          <div class="responseHeader">Ответ:</div>
+          <textarea id="response" class="response" readonly spellcheck="false"></textarea>
+        </section>
+      </main>
+    </div>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
